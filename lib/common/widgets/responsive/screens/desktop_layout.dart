@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wevn/common/widgets/layouts/headers/header.dart';
+import 'package:wevn/common/widgets/sidebars/sidebar.dart';
 // import 'package:wevn/common/widgets/containers/rounded_container.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -14,7 +15,7 @@ class DesktopLayout extends StatelessWidget {
     return  Scaffold(
       body: Row(
         children: [
-          const Expanded(child: Drawer()),
+          const Expanded(child: TSidebar()),
           Expanded(
             flex: 5,
             child: Column(

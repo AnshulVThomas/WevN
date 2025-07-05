@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wevn/common/widgets/layouts/headers/header.dart';
+import 'package:wevn/common/widgets/sidebars/sidebar.dart';
 // import 'package:wevn/common/widgets/containers/rounded_container.dart';
 
 class TabletLayout extends StatelessWidget {
@@ -12,7 +13,7 @@ class TabletLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
       key: scaffoldKey ,
-      drawer: const Drawer(),
+      drawer: const TSidebar(),
       appBar: THeader(ScaffoldKey: scaffoldKey,),
       body: body ?? const SizedBox(),
     );
