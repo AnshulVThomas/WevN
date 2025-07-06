@@ -37,8 +37,11 @@ class TCircularPngImage extends StatelessWidget {
         //     ? Border.all(color: borderColor!, width: borderWidth)
         //     : null,
         image: DecorationImage(
+          
           image: AssetImage(imagePath),
+          
           fit: fit,
+          
         ),
       ),
     );

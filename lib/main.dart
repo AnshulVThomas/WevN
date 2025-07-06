@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'homepage.dart';
+import 'package:get/get.dart';
+import 'package:wevn/routes/app_routes.dart';
+import 'package:wevn/routes/routes.dart';
+
 
 void main() {
 
@@ -14,17 +17,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
 
       debugShowCheckedModeBanner: false,
       title: "WevN",
+      themeMode: ThemeMode.light,
       theme: ThemeData(
-        colorScheme: ColorScheme.light(
-          
-        )
-      ),
+        colorScheme: ColorScheme.light()),
 
-      home: Homepage()
+        getPages: TAppRoute.pages,
+        initialRoute: TRoutes.dashboard,
+        defaultTransition: Transition.fadeIn,
 
     );
   }

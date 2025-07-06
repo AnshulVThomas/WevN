@@ -5,7 +5,7 @@ import 'package:wevn/common/widgets/responsive/screens/mobile_layout.dart';
 import 'package:wevn/common/widgets/responsive/screens/tablet_layout.dart';
 
 class TPageTemplate extends StatelessWidget {
-  const TPageTemplate({super.key,this.desktop, this.tablet, this.mobile, this.useLayout = true});
+  const TPageTemplate({super.key,required this.id, this.desktop, this.tablet, this.mobile, this.useLayout = true});
 
 
   
@@ -15,7 +15,11 @@ class TPageTemplate extends StatelessWidget {
 
   final Widget? mobile;
 
+  final String id;
+
   final bool useLayout;
+
+  
 
   @override
   Widget build(BuildContext context) {

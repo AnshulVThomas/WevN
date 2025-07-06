@@ -4,7 +4,7 @@ import 'package:wevn/common/widgets/sidebars/sidebar.dart';
 // import 'package:wevn/common/widgets/containers/rounded_container.dart';
 
 class DesktopLayout extends StatelessWidget {
-  DesktopLayout({super.key,this.body});
+  const DesktopLayout({super.key,this.body});
 
   final Widget? body;
 
@@ -23,7 +23,7 @@ class DesktopLayout extends StatelessWidget {
                 // HEADER
                 THeader(),
                 // BODY
-                body ?? const SizedBox()
+                Expanded(child: SingleChildScrollView(child: body ?? const SizedBox()))
               ],
             ), // Replace with your main content widget
           ),

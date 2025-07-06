@@ -32,7 +32,7 @@ class TSizes{
   static const double appBarHeight = 45.0;
 
   // Space between items
-  static const double spaceBetweenItems = 16.0;
+  static const double spaceBetweenItems = 12.0;
   static const double defaultSpace = 24.0;
   static const double defaultSpaceBetweenItems = 16.0;
 
